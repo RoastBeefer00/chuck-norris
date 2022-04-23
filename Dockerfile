@@ -1,9 +1,7 @@
-FROM python:3
-
-WORKDIR /Users/roastbeefer/docker/chucknorris
+FROM python:3.9.12-buster
 
 RUN pip install requests
 
-COPY . .
+RUN git clone https://github.com/RoastBeefer00/chuck-norris.git 
 
-CMD ["python", "./chucknorris.py"]
+CMD ["python", "./chuck-norris/chucknorris.py"]

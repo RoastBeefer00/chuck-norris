@@ -2,7 +2,7 @@ import requests
 import json
 import random
 
-names = ["Mike Lim", "Jake Jasmin", "Chris Olson"]
+names = ["Carmen Jasmin", "Bitches", "Fluffets Nuggets"]
 
 
 response = requests.get("https://api.chucknorris.io/jokes/random")
